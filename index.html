@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Trainings Log</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h1>Trainings Log</h1>
+    <div id="controls">
+        <label for="dateInput">Datum:</label>
+        <input type="date" id="dateInput">
+        <button id="wadenBtn">Wadenheber</button>
+        <button id="knieBtn">Knie Beuger</button>
+    </div>
+
+    <div id="monthNav">
+        <button id="prevMonth">&lt;</button>
+        <span id="monthYearLabel"></span>
+        <button id="nextMonth">&gt;</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Datum</th>
+                <th>Wadenheber</th>
+                <th>Knie Beuger</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
